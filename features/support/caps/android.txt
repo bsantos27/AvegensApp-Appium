@@ -1,0 +1,5 @@
+[caps]
+automationName = "UIAutomator2"
+platformName = "Android"
+deviceName = "Android Emulator"
+app = "//Users//joaotadeu//Documents//Workspace//Appium//app//twp.apk"

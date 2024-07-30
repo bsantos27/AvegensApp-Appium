@@ -1,0 +1,98 @@
+[
+  {
+    "id": "navegação-de-app-avengers",
+    "uri": "Features/features/nav.feature",
+    "keyword": "Funcionalidade",
+    "name": "Navegação de App Avengers",
+    "description": "        Acesso APP Avengers\n        Seleciono um Heroi\n        e Valido que foi selecionado com sucesso",
+    "line": 3,
+    "elements": [
+      {
+        "id": "navegação-de-app-avengers;abrir-menu-do-app-e-selecionar-um-heroi-e-validar-que-o-mesmo-está-validado",
+        "keyword": "Cenario",
+        "name": "Abrir Menu do App e selecionar um heroi e validar que o mesmo está validado",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o menu do app",
+            "line": 10,
+            "match": {
+              "location": "Features/steps/nav_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1981707000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "seleciono o Heroi da lista",
+            "line": 11,
+            "rows": [
+              {
+                "cells": [
+                  "Heroi"
+                ]
+              },
+              {
+                "cells": [
+                  "Thor"
+                ]
+              }
+            ],
+            "match": {
+              "location": "Features/steps/nav_step.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47753000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver a mensagem \"Deus do Trovão, príncipe herdeiro de Asgard\"",
+            "line": 14,
+            "match": {
+              "location": "Features/steps/nav_step.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 741459000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste_selecao_heroi",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "Features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8948685000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "Features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336177000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
